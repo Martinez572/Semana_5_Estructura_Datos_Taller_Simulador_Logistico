@@ -9,16 +9,16 @@ class SmartLogisticsApp:
         self.root.title("Smart Logistics Hub")
         self.root.geometry("1200x600")
 
-        # 🔵 Cola de pedidos (FIFO)
+        # Cola de pedidos (FIFO)
         self.order_queue = deque()
 
-        # 🟡 Pedidos procesados listos para envío
+        #Pedidos procesados listos para envío
         self.ready_orders = []
 
-        # 🔴 Pila del camión (LIFO)
+        #Pila del camión (LIFO)
         self.truck_stack = []
 
-        # 🟢 Array fijo del inventario
+        # Array fijo del inventario
         self.inventory = [
             "Electrónica",
             "Ropa",
